@@ -1,6 +1,6 @@
 import React from "react";
 import TeamCard from "./teamCard";
-import teams from "./CollegeBasketballTeams.json";
+import CollegeBasketballTeams from "./CollegeBasketballTeams.json";
 
 {/*This component is the team list and is styled using the tableStyle variable */}
 
@@ -24,7 +24,7 @@ class TeamList extends React.Component {
                         <th>Location</th>
                     </tr>
                 </thead>
-                {teams.teams.map((team) => (
+                {CollegeBasketballTeams.teams.map((team) => (
                     <TeamCard
                         school={team.school}
                         name={team.name}
