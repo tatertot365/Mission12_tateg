@@ -13,26 +13,28 @@ const tableStyle = {
 
 }
 
-const TeamList = () => {
-    return (
-        <table style={tableStyle}>
-            <thead>
-                <tr>
-                    <th>School</th>
-                    <th>Team</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            {teams.teams.map((team) => (
-                <TeamCard
-                    school={team.school}
-                    name={team.name}
-                    city={team.city}
-                    state={team.state}
-                />
-            ))}
-        </table>
-    );
+class TeamList extends React.Component {
+    render() {
+        return (
+            <table style={tableStyle}>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Team</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                {teams.teams.map((team) => (
+                    <TeamCard
+                        school={team.school}
+                        name={team.name}
+                        city={team.city}
+                        state={team.state}
+                    />
+                ))}
+            </table>
+        );
+    }
 }
 
 export default TeamList;

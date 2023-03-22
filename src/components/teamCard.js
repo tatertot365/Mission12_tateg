@@ -9,14 +9,16 @@ const tableStyle = {
     width: "50%",
 }
 
-const TeamCard = (props) => {
-    return (
-        <tr style={tableStyle}>
-            <td>{props.school}</td>
-            <td>{props.name}</td>
-            <td>{props.city}, {props.state}</td>
-        </tr>
-    );
+class TeamCard extends React.Component {
+    render() {
+        return (
+            <tr style={tableStyle}>
+                <td>{this.props.school}</td>
+                <td>{this.props.name}</td>
+                <td>{this.props.city}, {this.props.state}</td>
+            </tr>
+        );
+    }
 }
 
 export default TeamCard;
