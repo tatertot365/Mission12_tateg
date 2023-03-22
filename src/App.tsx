@@ -6,8 +6,7 @@ import TeamList from './components/teamList';
 function App() {
   return (
     <>
-      {//<Header />
-}
+      <Header />
       <TeamList />
     </>
   );
